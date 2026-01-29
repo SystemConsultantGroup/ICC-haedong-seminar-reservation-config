@@ -1,0 +1,15 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+namespace: icc-haedong-reservation-prod
+resources:
+- namespace.yaml
+- secret.yaml
+- ../../base
+patches:
+- path: domain.json
+  target:
+    kind: Ingress
+    name: icc-haedong-reservation-ingress
+images:
+- name: scgskku/icc-haedong-seminar-reservation
+  newTag: 0ad
