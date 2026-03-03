@@ -12,4 +12,4 @@ patches:
     name: icc-haedong-reservation-ingress
 images:
 - name: scgskku/icc-haedong-seminar-reservation
-  newTag: ce0a370cbafc1e831d24c469c4da3d19b0a90fe5
+  newTag: 10dbe4c81c23b39c9f41175366985540e074a74e
